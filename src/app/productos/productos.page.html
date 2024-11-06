@@ -22,8 +22,11 @@
             <ion-avatar aria-hidden="true" slor="start">
               <img alt="" [src]="producto.thumbnail"/>
             </ion-avatar>
-            <ion-label>{{producto.title}} </ion-label>
-            <ion-note> {{producto.price}} </ion-note>
+            <ion-label>
+              <h2>{{ producto.title }}</h2>
+              <p color="secondary">Precio: {{ producto.price }}</p>
+              <p color="success">Descuento: {{ producto.discountPercentage }}%</p>
+            </ion-label>
           </ion-item>
         </ion-list>
       </ion-col>
