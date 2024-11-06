@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>productos</ion-title>
+    <ion-title>Catalago</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -10,7 +10,10 @@
       <ion-col>
         <ion-toolbar>
           <ion-buttons slot="start">
-            <ion-button>Salir</ion-button>
+            <ion-button (click)="anterior()">Anterior</ion-button>
+          </ion-buttons>
+          <ion-buttons slot="end">
+            <ion-button (click)="siguiente()">Siguiente</ion-button>
           </ion-buttons>
         </ion-toolbar>
       </ion-col>

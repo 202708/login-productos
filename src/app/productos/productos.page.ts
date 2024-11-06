@@ -32,7 +32,15 @@ export class ProductosPage implements ViewWillEnter, ViewDidLeave {
   });
   this.prdS.listarProductos();
   
-   
+  
+ }
+
+ public siguiente(){
+  this.prdS.siguientesProductos();
+ }
+
+ public anterior(){
+  this.prdS.productosAnterior();
  }
 
 }
